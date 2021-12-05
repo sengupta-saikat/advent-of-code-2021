@@ -20,7 +20,8 @@ fun main() {
     }
 
     fun part2Idiomatic(input: List<Int>): Int {
-        return input.windowed(3).windowed(2).count { (a, b) -> b.sum() > a.sum() }
+        // return input.windowed(3).windowed(2).count { (a, b) -> b.sum() > a.sum() }
+        return input.windowed(4).count { it[0] < it[3] }
     }
 
     // test if implementation meets criteria from the description, like:
