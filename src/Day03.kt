@@ -59,3 +59,4 @@ private fun List<String>.countBitsInColumn(column: Int): BitCount {
 }
 
 data class BitCount(val zeroes: Int, val ones: Int)
+
